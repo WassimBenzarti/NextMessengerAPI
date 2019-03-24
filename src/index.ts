@@ -17,7 +17,6 @@ export const app = express()
   .use(cors({ origin: "*" }))
   .get("/", (req, res) => res.json({ success: 1 }))
   .use("/webhook", MessengerRouter)
-
   // Nothing
   .post("/webhook", (req, res, next) => {
     console.log(JSON.stringify(req.body, null, 4));
