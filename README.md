@@ -1,2 +1,0 @@
-# NextMessengerAPI
-Created with CodeSandbox

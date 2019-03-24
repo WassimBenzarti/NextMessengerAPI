@@ -1,0 +1,73 @@
+{
+  "responseId": "92c226fa-8fa6-4355-b04c-77e1b1f5500a",
+  "queryResult": {
+    "queryText": "Yes",
+    "action": "Reminder.Reminder-yes",
+    "parameters": {},
+    "allRequiredParamsPresent": true,
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [""]
+        }
+      }
+    ],
+    "outputContexts": [
+      {
+        "name": "projects/newagent-f0f94/agent/sessions/f4f98775-d500-4dfd-8d8c-383611b3661c/contexts/reminder-followup",
+        "lifespanCount": 1,
+        "parameters": {
+          "date-time.original": "at 10pm tomorrow",
+          "Reminder-task.original": "take the trash",
+          "date-time": {
+            "date_time": "2019-03-23T22:00:00+01:00"
+          },
+          "Reminder-task": "take the trash"
+        }
+      },
+      {
+        "name": "projects/newagent-f0f94/agent/sessions/f4f98775-d500-4dfd-8d8c-383611b3661c/contexts/generic",
+        "lifespanCount": 4,
+        "parameters": {
+          "date-time.original": "at 10pm tomorrow",
+          "Reminder-task.original": "take the trash",
+          "date-time": {
+            "date_time": "2019-03-23T22:00:00+01:00"
+          },
+          "Reminder-task": "take the trash",
+          "facebook_sender_id": "2201759623224034"
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/newagent-f0f94/agent/intents/c13b858d-7f98-4db6-bec8-a6a82b813f60",
+      "displayName": "Reminder - yes"
+    },
+    "intentDetectionConfidence": 1,
+    "languageCode": "en"
+  },
+  "originalDetectIntentRequest": {
+    "source": "facebook",
+    "payload": {
+      "data": {
+        "sender": {
+          "id": "2201759623224034"
+        },
+        "recipient": {
+          "id": "225811101085640"
+        },
+        "message": {
+          "mid": "N1xCr0cZs-_Nc37wd33VF4cHHBd1uNZk2f-f_SXMXUHbnhj4MKVgJn2mI5DwQDUal2Z1Yg6gKxfXN5CCoLIqGA",
+          "text": "Yes",
+          "quick_reply": {
+            "payload": "Yes"
+          },
+          "seq": 789534
+        },
+        "timestamp": 1553112159155
+      },
+      "source": "facebook"
+    }
+  },
+  "session": "projects/newagent-f0f94/agent/sessions/c40f2db8-4a6d-43e8-a946-a660f9180503"
+}

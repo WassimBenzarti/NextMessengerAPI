@@ -1,0 +1,23 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "dist/index.js",
+            "use": "@now/node-server"
+        }
+    ],
+    "routes": [
+        {
+            "src": "^/(.*)",
+            "headers": {
+                "cache-control": "s-maxage=0"
+            },
+            "dest": "dist/index.js"
+        }
+    ],
+    "env": {
+        "VERIFY_TOKEN": "thecatisrunningintothewild",
+        "REDIRECT_URL": "https://sandbox.bmw.now.sh/",
+        "PAGE_TOKEN": "EAAPOFeYQ0EcBACtn4F3WUhuNtNCC5xgtRmj3RBz6kpIp3C0kNF9o7ORfJkI7QKPwmsIdXGppNS9vcFtsLs5MGJ9parAvj6iG6Uwam4YT0wnZCjjzZAXR0GOr9nQLtmzCanFp3i8gQ8dZC9g2bTZCRU9UkIdoGZAyWkd9YMs36dQZDZD"
+    }
+}
